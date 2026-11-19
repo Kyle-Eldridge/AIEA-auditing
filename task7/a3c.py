@@ -106,7 +106,7 @@ class A3CThread(Thread):
 
 
 class A3C:
-    def __init__(self, env_supplier, nn, num_threads=8, learning_rate=2e-4, gamma=0.99, t_max=5, value_loss_coef=0.5, entropy_coef=0.01, frame_skip=2, file="model.pth", save_frequency=1000, preprocessor=None, reward_logger=None, debug=False):
+    def __init__(self, env_supplier, nn, num_threads=8, learning_rate=1e-4, gamma=0.98, t_max=5, value_loss_coef=0.5, entropy_coef=0.01, frame_skip=2, file="model.pth", save_frequency=1000, preprocessor=None, reward_logger=None, debug=False):
         self.env_supplier = env_supplier
         self.nn = nn
         self.num_threads = num_threads
